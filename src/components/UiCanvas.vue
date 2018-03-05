@@ -21,7 +21,9 @@ import tools from '../libs/Tools';
 
 const getMousePos = (event) => {
   const rect = event.target.getBoundingClientRect();
-  return [event.clientX - rect.left, event.clientY - rect.top];
+  const clientX = event.clientX || event.touches[0].clientX;
+  const clientY = event.clientY || event.touches[0].clientY;
+  return [clientX - rect.left, clientY - rect.top];
 };
 
 export default {

@@ -215,7 +215,7 @@ export default {
 #ui-canvas
 {
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 canvas
@@ -225,10 +225,10 @@ canvas
   left: 0;
 
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 canvas:not(.md-image) {
-  height: 100vh;
+  height: 100vh !important;
 }
 </style>
